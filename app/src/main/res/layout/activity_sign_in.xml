@@ -7,27 +7,43 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:inputType="textEmailAddress"/>
+        android:hint="Email"/>
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextEmail"
-        android:layout_marginTop="16dp"
-        android:hint="Password"
-        android:inputType="textPassword"/>
+        android:hint="Password"/>
 
     <Button
-        android:id="@+id/buttonSignIn"
-        android:layout_width="match_parent"
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPassword"
-        android:layout_marginTop="16dp"
         android:text="Sign In"/>
+
+    <TextView
+        android:id="@+id/signInSuccessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In success"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:visibility="gone"/>
+
 
 </RelativeLayout>
